@@ -2,8 +2,9 @@
 
 import React from "react";
 import { OriaLogo } from "./OriaLogo";
+import { GithubIcon } from "./icons";
 import { useAccent } from "@/context/AccentContext";
-import { Github, MessageSquare, Terminal, FileText, Heart, ExternalLink } from "lucide-react";
+import { MessageSquare, Terminal, FileText, Heart, ExternalLink } from "lucide-react";
 
 export function Footer() {
   const { activeAccent } = useAccent();
@@ -77,7 +78,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-[#EEEEF2] transition-colors flex items-center gap-1.5"
                 >
-                  <Github className="w-3.5 h-3.5" />
+                  <GithubIcon className="w-3.5 h-3.5" />
                   <span>GitHub Repository</span>
                 </a>
               </li>
@@ -158,7 +159,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-[#2A2A32] flex flex-col sm:flex-row items-center justify-between gap-4 text-[#72727E] text-[11px]">
           <div>
-            © {new Date().getFullYear()} M26 Software. Alle Rechte vorbehalten.
+            © 2026 M26 Software. Alle Rechte vorbehalten.
           </div>
           <div className="flex items-center gap-4">
             <span className="font-mono">Linux-First · Wayland &amp; X11</span>

@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import { OriaLogo } from "./OriaLogo";
+import { GithubIcon } from "./icons";
 import { useAccent } from "@/context/AccentContext";
-import { Download, Github, Star, Menu, X, ArrowUpRight, Cpu } from "lucide-react";
+import { Download, Star, Menu, X, ArrowUpRight, Cpu } from "lucide-react";
 
 export function Navbar({ onDownloadClick }: { onDownloadClick?: () => void }) {
   const { activeAccent } = useAccent();
@@ -80,7 +81,7 @@ export function Navbar({ onDownloadClick }: { onDownloadClick?: () => void }) {
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-mono text-[#A0A0AA] hover:text-[#EEEEF2] bg-[#19191D] hover:bg-[#202026] border border-[#2A2A32] rounded-[4px] transition-colors"
             >
-              <Github className="w-3.5 h-3.5 text-[#EEEEF2]" />
+              <GithubIcon className="w-3.5 h-3.5 text-[#EEEEF2]" />
               <span>GitHub</span>
               <span className="w-px h-3 bg-[#2A2A32]" />
               <Star className="w-3 h-3 text-[#E8D9A2] fill-[#E8D9A2]/40" />
@@ -156,7 +157,7 @@ export function Navbar({ onDownloadClick }: { onDownloadClick?: () => void }) {
               className="flex items-center justify-between px-3 py-2 text-xs font-mono text-[#A0A0AA] bg-[#19191D] rounded-[4px]"
             >
               <span className="flex items-center gap-2">
-                <Github className="w-4 h-4 text-[#EEEEF2]" />
+                <GithubIcon className="w-4 h-4 text-[#EEEEF2]" />
                 github.com/m26software/oria
               </span>
               <span className="flex items-center gap-1 text-[#E8D9A2]">

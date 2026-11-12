@@ -4,7 +4,8 @@ import React from "react";
 import { useAccent } from "@/context/AccentContext";
 import { BrowserMockup } from "./BrowserMockup";
 import { AccentSwitcher } from "./AccentSwitcher";
-import { Download, Github, Terminal, ArrowRight, ShieldCheck, Zap, Layers } from "lucide-react";
+import { GithubIcon } from "./icons";
+import { Download, Terminal, ArrowRight, ShieldCheck, Zap, Layers } from "lucide-react";
 
 export function Hero({ onDownloadClick }: { onDownloadClick?: () => void }) {
   const { activeAccent } = useAccent();
@@ -72,7 +73,7 @@ export function Hero({ onDownloadClick }: { onDownloadClick?: () => void }) {
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-2 px-5 py-3 rounded-[4px] bg-[#19191D] hover:bg-[#202026] text-[#EEEEF2] border border-[#2A2A32] font-medium text-sm transition-colors"
           >
-            <Github className="w-4 h-4 text-[#A0A0AA]" />
+            <GithubIcon className="w-4 h-4 text-[#A0A0AA]" />
             <span>View Source on GitHub</span>
           </a>
         </div>
